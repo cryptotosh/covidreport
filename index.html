@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>COVID-19 Incoming Patients</title>
+        <link rel="icon" href="img/Home.ico">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="alert">
+                <h2 class="heading">COVID-19 REPORT</h2>
+                <p id="alert" class="alert-center" style="display: none">Details added successfuly!</p>
+            </div>
+
+            <div class="container">
+                <form class="patient-form">
+                    <div class="form-group">
+                        <label for="fname" class="label-control">First Name:</label>
+                        <input id="fname" class="form-control" type="text" name="fname"  autofocus="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname" class="label-control">Last Name:</label>
+                        <input id="lname" class="form-control" type="text" name="lname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="label-control">Email:</label>
+                        <input id="email" class="form-control" type="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="gender" class="label-control">Gender:</label>
+                        <select id="gender" class="form-control" name="gender">
+                            <option disabled selected value>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-check">
+                        <input id="travel" class="form-check-input" type="checkbox" name="travel" value="true">
+                        <label for="travel" class="form-check-label">Recently came in to Nigeria within the last 14 days?</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+
+                </form>
+                <!-- <form class="patient-form">
+                    <div class="form-group">
+                        <label id="fname-label" for="name" class="pat-ctrl1">First Name:</label>
+                        <input type="text" name="firstname" id="fname" class="pat-ctrl2" />
+                    </div>
+
+                    <div class="form-group">
+                        <label id="lname-label" for="name" class="pat-ctrl1">Last Name:</label>
+                        <input type="text" name="fname" id="lname" class="pat-ctrl2" />
+                    </div>
+
+                    <div class="form-group">
+                        <label id="email-label" for="email" class="pat-ctrl1">Email Address:</label>
+                        <input type="email" name="email" id="email" class="pat-ctrl2"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="gender-label" for="gender" class="pat-ctrl1">Gender:</label>
+                        <select id="gender" name="gender" class="pat-ctrl2">
+                        <option disabled selected value>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <input name="travel" value="travel" type="checkbox" id="travel" class="pat-crtl2">
+                            <span for="checkbox" class="pat-ctrl2">Reccently came in to Nigeria within the last 14 days?</span>
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" id="submit" class="btn-submit">Submit</button>
+                    </div>
+                </form> -->
+                
+                <div class="display-items">
+                    <table class="table-output" id="output-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email Address</th>
+                                <th>Gender</th>
+                                <th>Came to Nigeria within the last 14 days?</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                        
+                        </thead>
+                        <tbody class="table-body">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
