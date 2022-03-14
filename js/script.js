@@ -41,11 +41,13 @@ form.addEventListener('submit', (e)=>{
     <td><button class='btn-edit'>Edit</button></td>
     <td><button class='btn-danger'>Delete</button></td>
     `;
+    e.target.reset;
+/*
     fname.value="";
     lname.value="";
     email.value="";
     gender.value="";
-    travel.checked=false;
+    travel.checked=false;*/
     
     const fn=document.getElementById('fname').autofocus;
     
@@ -102,7 +104,7 @@ tBody.addEventListener('click', (e)=>{
          fname.value=e.target.parentElement.firstElementChild.textContent;
     }
     
-    //Renove Table
+    //Remove Table
     if (tBody.children.length===0){
         table.classList.remove('showTable')
     }
