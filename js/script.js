@@ -41,7 +41,7 @@ form.addEventListener('submit', (e)=>{
     <td><button class='btn-edit'>Edit</button></td>
     <td><button class='btn-danger'>Delete</button></td>
     `;
-    e.target.reset;
+    e.target.reset();
 /*
     fname.value="";
     lname.value="";
